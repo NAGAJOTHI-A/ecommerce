@@ -2,15 +2,16 @@ package com.example.ecomsec.controller;
 
 import java.util.Map;
 
-import org.springframework.stereotype.Controller;
+
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.example.ecomsec.entity.User;
 import com.example.ecomsec.service.UserService;
 
-@Controller
+@RestController
 @RequestMapping("/api/users")
 public class UserController {
 

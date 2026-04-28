@@ -2,9 +2,12 @@ package com.example.ecomsec.service;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import com.example.ecomsec.entity.Product;
 import com.example.ecomsec.repository.ProductRepository;
 
+@Service
 public class ProductServiceImple implements ProductService{
 	
 	private final ProductRepository productRepository;

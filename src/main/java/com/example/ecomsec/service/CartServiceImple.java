@@ -7,6 +7,8 @@ import org.springframework.stereotype.Service;
 import com.example.ecomsec.entity.Cart;
 import com.example.ecomsec.repository.CartRepository;
 
+import jakarta.transaction.Transactional;
+
 @Service
 public class CartServiceImple implements CartService{
 
@@ -38,6 +40,7 @@ public class CartServiceImple implements CartService{
 	}
 
 	@Override
+	@Transactional
 	public void clearCart(Long userId) {
 		// TODO Auto-generated method stub
 		repository.deleteByUserId(userId);

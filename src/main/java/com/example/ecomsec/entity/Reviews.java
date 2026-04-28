@@ -20,7 +20,7 @@ public class Reviews {
 	
 	private Double rating;
 	
-	private String Comment;
+	private String comment;
 	
 	@ManyToOne
 	@JoinColumn(name="user_id")
